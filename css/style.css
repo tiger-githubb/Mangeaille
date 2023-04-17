@@ -472,3 +472,12 @@
 .footer .copyright a {
     color: var(--light);
 }
+
+
+
+/* other */
+
+.img-size {
+    height: 510px; /* Définissez la hauteur souhaitée ici */
+  }
+  

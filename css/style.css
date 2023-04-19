@@ -481,3 +481,6 @@
     height: 510px; /* Définissez la hauteur souhaitée ici */
   }
   
+.text-black{
+    color: black !important;
+}

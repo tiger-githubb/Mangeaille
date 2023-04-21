@@ -493,3 +493,31 @@
 .justify-content{
     text-align:justify !important;
 }
+
+/* other */
+
+.img-size {
+    height: 510px; /* Définissez la hauteur souhaitée ici */
+  }
+  
+.text-black{
+    color: black !important;
+}
+
+.info-box{
+    padding: 20px;
+}
+
+.align-items-end{
+    align-items: flex-end !important;
+}
+
+.section-header {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-header .h2{
+    font-weight: normal !important;
+    font-size: normal !important;
+}

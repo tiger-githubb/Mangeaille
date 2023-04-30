@@ -1,491 +1,1053 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>CodeLab solux</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <script type="text/javascript">
+        !function () {
+            window._pxAppId = "PXAbo2Yc8X";
+            var e = document.getElementsByTagName("script")[0]
+                , n = document.createElement("script");
+            n.async = 1,
+                n.src = "//client.px-cloud.net/PXAbo2Yc8X/main.min.js",
+                e.parentNode.insertBefore(n, e)
+        }()
+    </script>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://images.ctfassets.net" />
+    <link rel="preconnect" href="https://static.zdassets.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://www.googleadservices.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        !function (e, t, a, n, g) {
+            e[n] = e[n] || [],
+                e[n].push({
+                    "gtm.start": (new Date).getTime(),
+                    event: "gtm.js"
+                });
+            var m = t.getElementsByTagName(a)[0]
+                , r = t.createElement(a);
+            r.async = !0,
+                r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-573CJ9R",
+                m.parentNode.insertBefore(r, m)
+        }(window, document, "script", "dataLayer")
+    </script>
+    <title>California Fresh &Healthy Restaurants | Lemonade</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-startup-image" href="/icons/icon-192x192.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-150x150.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Lemonade is a Modern Restaurant offering a colorful bounty of healthy, delicious seasonal menu items. Visit our site & place an order online today!"
+        data-react-helmet="true" />
+    <meta property="og:description"
+        content="Lemonade is a Modern Restaurant offering a colorful bounty of healthy, delicious seasonal menu items. Visit our site & place an order online today!"
+        data-react-helmet="true" />
+    <meta property="og:type" content="website" data-react-helmet="true">
+    <meta property="og:site_name" content="Lemonade" data-react-helmet="true">
+    <meta property="og:url" content="https://lemonadela.com/" data-react-helmet="true">
+    <meta property="og:title" content="A colorful bounty of healthy, delicious seasonal menu items"
+        data-react-helmet="true">
+    <meta property="article:publisher" content="https://www.facebook.com/LemonadeLA/" data-react-helmet="true">
+    <meta name="twitter:card" content="summary_large_image" data-react-helmet="true">
+    <meta name="twitter:title" content="A colorful bounty of healthy, delicious seasonal menu items"
+        data-react-helmet="true">
+    <meta name="twitter:description"
+        content="Lemonade is a Modern Restaurant offering a colorful bounty of healthy, delicious seasonal menu items. Visit our site & place an order online today!"
+        data-react-helmet="true">
+    <meta name="twitter:site" content="@lemonadela" data-react-helmet="true">
+    <meta name="twitter:creator:id" content="47706994" data-react-helmet="true">
+    <meta name="twitter:image" content="/icons/icon-512x512.png" data-react-helmet="true">
+    <meta name="version" content="" data-react-helmet="true">
+    <meta name="p:domain_verify" content="a2be0a2122abd67e888f9d249f7e681d" />
+    <style>
+        #loading_screen,
+        #sitemap,
+        noscript {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #666;
+            background-color: #fff;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 500px;
+            font-size: 12px
+        }
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+        a,
+        a:visited {
+            color: #292d33
+        }
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
-        rel="stylesheet">
+        h1 {
+            font-size: 18px
+        }
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        h2 {
+            margin-top: 20px;
+            font-size: 14px
+        }
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        h3 {
+            color: #333
+        }
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        #sitemap {
+            margin-top: 50px
+        }
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+        ul {
+            list-style: none
+        }
+
+        li {
+            margin: 8px 0
+        }
+    </style>
+    <script>
+        "www.lemonadela.com" === window.location.hostname && (window.location = "https://lemonadela.com" + window.location.pathname + window.location.search)
+    </script>
+    <script defer="defer" src="/static/js/main.b6f2589e.js"></script>
+    <link href="/static/css/main.aaf7b917.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Chargement...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <img src="img/CLS 2.png" alt="" style="height: 50px; width: auto;">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active"> Acceuil</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="solutions.html" class="nav-item nav-link">Nos solutions</a>
-                <a href="apropos.html" class="nav-item nav-link">Qui sommes nous</a>
-                <a href="contact.html" class="nav-item nav-link">support</a>
-                <a href="rdv.html" class="nav-item nav-link">Demander un rdv</a>
+<body spellcheck="false"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-573CJ9R" height="0"
+            width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="root"><a href="#main" class="skip-to-main-content">Skip to main content</a>
+        <div class="content-above-footer">
+            <header class="navbar">
+                <div class="container container-fluid">
+                    <div class="navbar__wrapper">
+                        <nav class="navbar__nav" role="navigation" aria-label="Primary"><button type="button"
+                                class="menu-toggle" title="Open the main navigation in a modal window"
+                                aria-label="Open the main navigation in a modal window"><img
+                                    src="/static/media/menu.a5dcfad8788a6df601755e3d333ed201.svg" alt=""
+                                    class="Menu"></button>
+                            <div class="navbar__brand"><a aria-current="page" title="Lemonade home" href="/"><img
+                                        src="/static/media/Lemonade-Logo_Y.4b542fdb0910646ac8b53b240bb7a08a.svg"
+                                        alt="Lemonade home" class="logo"></a></div>
+                            <div class="quick-nav"><a class="quick-nav__item"
+                                    title="Find a location near you. Stop in, pickup or we'll deliver."
+                                    href="/locations">Locations</a><a class="quick-nav__item" href="/group-orders">Group
+                                    Orders</a><a
+                                    href="https://catering.lemonadela.com/index.cfm?fuseaction=order&amp;action=menu-categories&amp;channel-id=2"
+                                    class="quick-nav__item">Catering</a><a class="quick-nav__item"
+                                    title="Learn to cook, love your job and get paid to do it"
+                                    href="/careers">Careers</a><a class="quick-nav__item" href="/login">Rewards</a>
+                            </div>
+                        </nav>
+                        <nav class="navbar__nav navbar__nav--right" role="navigation" aria-label="Secondary"><button
+                                type="button" class="cart-toggle" title="Open the shopping cart in a modal window"><img
+                                    src="/static/media/cart.287c6bc09554f41076a0a97a2192816c.svg" alt="Cart (0 items)"
+                                    class="cart"></button><button type="button"
+                                class="button hidden-mobile checkout-button button--small button--primary">Start Your
+                                Order</button></nav>
+                    </div>
+                </div>
+            </header>
+            <div id="main-wrapper" class="main-page-content">
+                <main id="main" role="main" class="main-page-content">
+                    <div class="hero">
+                        <div class="container hero-widget">
+                            <div class="order-widget-wrapper" style="left: 50px;">
+                                <div class="order-widget">
+                                    <div class="order-widget__inner">
+                                        <h1 class="main-heading text-center">Hungry? Delivery is free on all orders $35
+                                            or more. </h1>
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <div class="location-selector"
+                                                    aria-label="Select a location for your pick up or delivery order"
+                                                    title="Select a location for your pick up or delivery order"
+                                                    tabindex="0">Please select a location<img
+                                                        src="/static/media/arrow.875217447d51173c9461553d890e5991.svg"
+                                                        alt="Caret" class="caret-icon rotate-90"></div>
+                                            </div>
+                                            <div class="row order-timing-row">
+                                                <div class="column">
+                                                    <div class="form-group"><select aria-label="Order Date"
+                                                            title="Order ahead up to 14 days in advance." disabled=""
+                                                            aria-invalid="false" type="text" id="order-date"
+                                                            class="form-control form-control--underline">
+                                                            <option value="20230430">Today</option>
+                                                            <option value="20230501">Monday 5/1</option>
+                                                            <option value="20230502">Tuesday 5/2</option>
+                                                            <option value="20230503">Wednesday 5/3</option>
+                                                            <option value="20230504">Thursday 5/4</option>
+                                                            <option value="20230505">Friday 5/5</option>
+                                                            <option value="20230506">Saturday 5/6</option>
+                                                            <option value="20230507">Sunday 5/7</option>
+                                                            <option value="20230508">Monday 5/8</option>
+                                                            <option value="20230509">Tuesday 5/9</option>
+                                                            <option value="20230510">Wednesday 5/10</option>
+                                                            <option value="20230511">Thursday 5/11</option>
+                                                            <option value="20230512">Friday 5/12</option>
+                                                            <option value="20230513">Saturday 5/13</option>
+                                                        </select><img
+                                                            src="/static/media/arrow.875217447d51173c9461553d890e5991.svg"
+                                                            alt="" class="caret-icon"></div>
+                                                </div>
+                                                <div class="column">
+                                                    <div class="form-group"><select placeholder="As soon as possible"
+                                                            aria-label="Order Time"
+                                                            title="When would you like your order to be ready?"
+                                                            disabled="" aria-invalid="false" type="text" id="order-time"
+                                                            class="form-control form-control--underline">
+                                                            <option value="ASAP" aria-label="As Soon As Possible">ASAP
+                                                            </option>
+                                                            <option value="13:15">1:15 pm</option>
+                                                            <option value="13:30">1:30 pm</option>
+                                                            <option value="13:45">1:45 pm</option>
+                                                            <option value="14:00">2:00 pm</option>
+                                                            <option value="14:15">2:15 pm</option>
+                                                            <option value="14:30">2:30 pm</option>
+                                                            <option value="14:45">2:45 pm</option>
+                                                            <option value="15:00">3:00 pm</option>
+                                                            <option value="15:15">3:15 pm</option>
+                                                            <option value="15:30">3:30 pm</option>
+                                                            <option value="15:45">3:45 pm</option>
+                                                            <option value="16:00">4:00 pm</option>
+                                                            <option value="16:15">4:15 pm</option>
+                                                            <option value="16:30">4:30 pm</option>
+                                                            <option value="16:45">4:45 pm</option>
+                                                            <option value="17:00">5:00 pm</option>
+                                                            <option value="17:15">5:15 pm</option>
+                                                            <option value="17:30">5:30 pm</option>
+                                                            <option value="17:45">5:45 pm</option>
+                                                            <option value="18:00">6:00 pm</option>
+                                                            <option value="18:15">6:15 pm</option>
+                                                            <option value="18:30">6:30 pm</option>
+                                                            <option value="18:45">6:45 pm</option>
+                                                            <option value="19:00">7:00 pm</option>
+                                                            <option value="19:15">7:15 pm</option>
+                                                            <option value="19:30">7:30 pm</option>
+                                                            <option value="19:45">7:45 pm</option>
+                                                        </select><img
+                                                            src="/static/media/arrow.875217447d51173c9461553d890e5991.svg"
+                                                            alt="" class="caret-icon"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="button-container"><button id="widget_pickup" aria-label="Pick Up"
+                                                title="Order online and come inside to pick up your food" type="button"
+                                                disabled=""
+                                                class="button button--disabled button--small button--primary">Pick
+                                                Up</button><button id="widget_dispatch" aria-label="Delivery"
+                                                title="Order online and we'll bring your food to your location"
+                                                type="button" disabled=""
+                                                class="button button--disabled button--small button--primary">Delivery</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-wrapper">
+                            <section class="carousel hero__carousel">
+                                <div class="react-multi-carousel-list  ">
+                                    <ul class="react-multi-carousel-track carousel__track"
+                                        style="transition: none 0s ease 0s; overflow: unset; transform: translate3d(-1707px, 0px, 0px);">
+                                        <li data-index="0" aria-hidden="true" class="react-multi-carousel-item  "
+                                            style="flex: 1 1 auto; position: relative; width: 569px;"></li>
+                                        <li data-index="1" aria-hidden="true" class="react-multi-carousel-item  "
+                                            style="flex: 1 1 auto; position: relative; width: 569px;"></li>
+                                        <li data-index="2" aria-hidden="true" class="react-multi-carousel-item  "
+                                            style="flex: 1 1 auto; position: relative; width: 569px;"></li>
+                                        <li data-index="3" aria-hidden="false"
+                                            class="react-multi-carousel-item react-multi-carousel-item--active "
+                                            style="flex: 1 1 auto; position: relative; width: 569px;"><a
+                                                href="https://lemonadela.com/login" data-current-slide="true"
+                                                class="carousel__item carousel__item--active" alt="Join Loyalty "
+                                                aria-label="Join Loyalty " tabindex="0"
+                                                style="--bg-image-desktop:url(&quot;//images.ctfassets.net/gurfnqpkp29y/mKH14pjzbRiR5wViuwiR0/5e7b2f60176fc2fda4ac9c55c581ad8a/2022-LMN-Website-Carousel-Loyalty_02.jpg?fm=jpg&amp;fl=progressive&amp;q=85&quot;); --bg-image-mobile:url(&quot;//images.ctfassets.net/gurfnqpkp29y/mKH14pjzbRiR5wViuwiR0/5e7b2f60176fc2fda4ac9c55c581ad8a/2022-LMN-Website-Carousel-Loyalty_02.jpg?fm=jpg&amp;fl=progressive&amp;q=75&amp;w=600&quot;);">
+                                                <div class="container">
+                                                    <div class="content"></div>
+                                                </div>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                                <ul class="react-multi-carousel-dot-list carousel__indicators">
+                                    <li data-index="0" class="react-multi-carousel-dot "><button
+                                            aria-label="Go to slide 1" aria-current="false"></button></li>
+                                    <li data-index="1" class="react-multi-carousel-dot "><button
+                                            aria-label="Go to slide 2" aria-current="false" spellcheck="false"></button>
+                                    </li>
+                                    <li data-index="2" class="react-multi-carousel-dot "><button
+                                            aria-label="Go to slide 3" aria-current="false"></button></li>
+                                    <li data-index="3"
+                                        class="react-multi-carousel-dot react-multi-carousel-dot--active"><button
+                                            aria-label="Go to slide 4" aria-current="true"></button></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <section class="what-we-do">
+                        <div class="container">
+                            <div class="what-we-do__inner"><img class=" lazyloaded"
+                                    data-src="/static/media/bug-alt.feae491e1c6b69438662133ddda67dea.svg" alt=""
+                                    role="presentation"
+                                    src="/static/media/bug-alt.feae491e1c6b69438662133ddda67dea.svg">
+                                <div class="message">
+                                    <h2>Eat, Drink, Live Colorfully</h2>
+                                    <p>A modern cafeteria serving seasonal California inspired fare <a
+                                            class="link-underline" aria-label="learn more about us"
+                                            title="learn more about us" href="/about-us">Learn More</a></p>
+                                </div><img class=" lazyloaded"
+                                    data-src="/static/media/bug-alt.feae491e1c6b69438662133ddda67dea.svg" alt=""
+                                    role="presentation"
+                                    src="/static/media/bug-alt.feae491e1c6b69438662133ddda67dea.svg">
+                            </div>
+                        </div>
+                    </section>
+                    <div class="image-tiles">
+                        <ul>
+                            <li><a href="/item/red-miso-beef-short-rib-bowl" title="Red Miso Beef Short Rib Bowl"
+                                    aria-label="Red Miso Beef Short Rib Bowl">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?q=80"
+                                            alt="with Snap Pea Edamame, Pickled Ginger, Crispy Onion, &amp; Furikake"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/7hiM61wMA9RqQLWBdC9fNa/b218ef692bb1b18b4207076390c00df0/Red_Miso_Beef_Bowl-WhiteGinger-RedRice_500x500-2.png?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/locations" title="Lemonade + Skating" aria-label="Lemonade + Skating">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?q=80"
+                                            alt="Find your nearest Lemonade"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/57HUdEZxONsoIrJ3BlGin2/ae5476c8ec28174b0943f5b5afa0976a/977A2073.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/item/ahi-tuna-avocado-poke-bowl" title="Ahi Tuna Avocado Poke Bowl"
+                                    aria-label="Ahi Tuna Avocado Poke Bowl">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?q=80"
+                                            alt="with Tangerine, Radish, Pickled Hijiki, Tobiko, &amp; Sesame. Served with Ginger, Shallots, Seaweed, &amp; Furikake"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/1mwitPnQgA1XkZj19Bq5kY/80598b6338a747f5e690376c81f4fc3e/082219_121310_.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/locations" title="Fancy a cold drink?" aria-label="Fancy a cold drink?">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?q=80"
+                                            alt="Find a Lemonade near you"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/2maGORFFGriUm84M2CChSy/77f085ffd41ca4bf7a5cdf8b4bfa97f5/Copy_of_LEMBLUE__0001.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/item/purple-kale-and-seasonal-fruit-v"
+                                    title="Purple Kale &amp; Seasonal Fruit"
+                                    aria-label="Purple Kale &amp; Seasonal Fruit">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?q=80"
+                                            alt="with Blackberries, Sesame Granola, &amp; Plum Vinaigrette"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/TfiXOdYNXpGCQDiufhwFd/5e440ea90abc5270678a7f22f583b7c8/082219_113103_.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/locations" title="There's a Lemonade near you"
+                                    aria-label="There's a Lemonade near you">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?q=80"
+                                            alt="Find a Lemonade near you"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/6k3RUzVmNt1rz5WNHdjEVw/5b0e92371f6f65bc5bc301ef86dc1a62/hb_exterior.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/locations" title="Palm trees love Lemonade too"
+                                    aria-label="Palm trees love Lemonade too">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?q=80"
+                                            alt="Find a Lemonade near you."
+                                            src="//images.ctfassets.net/gurfnqpkp29y/1kgmmrHgpIqFs19pxqaAOv/bd4341751813eb961a63d101be5fc341/AT4A9524-1__1_.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                            <li><a href="/item/ahi-tuna-avocado-poke-bowl" title="Ahi Tuna Avocado Poke Bowl"
+                                    aria-label="Ahi Tuna Avocado Poke Bowl">
+                                    <picture>
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x"
+                                            type="image/webp"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 2x">
+                                        <source
+                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x"
+                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=200 1x, //images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 2x">
+                                        <img class="img-responsive lazyloaded"
+                                            data-src="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?q=80"
+                                            alt="with Tangerine, Radish, Pickled Hijiki, Tobiko, &amp; Sesame. Served with Ginger, Shallots, Seaweed, &amp; Furikake"
+                                            src="//images.ctfassets.net/gurfnqpkp29y/3zLjW0QhintH9YuZ0Jwz1w/1b38217a453d4d42f9fb9f67733e8ce0/20200206_Lemonade_Thanx_010.jpg?q=80">
+                                    </picture>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <section class="featured-meals">
+                        <div class="container">
+                            <div class="row">
+                                <div class="column">
+                                    <h2>Most loved dishes</h2>
+                                </div>
+                                <div class="column">
+                                    <div class="tabs tabs--large" role="tablist"><button type="button" role="tab"
+                                            title="See our menu for lunch and dinner"
+                                            class="tabs__item tabs__item--active" aria-selected="true">Lunch and
+                                            Dinner</button></div>
+                                </div>
+                            </div>
+                            <div class="menu-feed">
+                                <div class="menu-feed__grid">
+                                    <div class="grid-item">
+                                        <div class="meal-card"><a title="Customize your Braised Angus Beef Comfort Bowl"
+                                                class="meal-image-link" href="/item/braised-angus-beef-comfort-bowl">
+                                                <div class="meal-card__image">
+                                                    <picture>
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x"
+                                                            type="image/webp" media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x"
+                                                            media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x"
+                                                            type="image/webp"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x">
+                                                        <img class="img-responsive lazyloaded"
+                                                            src="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?q=80"
+                                                            data-src="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?q=80"
+                                                            alt="Braised Angus Beef Comfort Bowl" width="275"
+                                                            height="275">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                            <div class="meal-card__content">
+                                                <div class="content-inner">
+                                                    <div class="calories">640 calories</div>
+                                                    <div class="name">Braised Angus Beef Comfort Bowl</div>
+                                                </div>
+                                                <div class="actions"><button
+                                                        title="Customize your Braised Angus Beef Comfort Bowl"
+                                                        type="button" class="button button--link">View
+                                                        Details</button><button
+                                                        title="Add Braised Angus Beef Comfort Bowl to your cart"
+                                                        type="button" class="button button--link">Start Your
+                                                        Order</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="meal-card"><a title="Customize your Classic Lemonade"
+                                                class="meal-image-link" href="/item/cold-pressed-classic-lemonade">
+                                                <div class="meal-card__image">
+                                                    <picture>
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x"
+                                                            type="image/webp" media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x"
+                                                            media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x"
+                                                            type="image/webp"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x">
+                                                        <img class="img-responsive lazyloaded"
+                                                            src="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?q=80"
+                                                            data-src="//images.ctfassets.net/gurfnqpkp29y/1qyQ9KbvdJNxsCtYDPZFFP/aab83d03840c818c07d2b918652242c9/Classic_Lemonade.png?q=80"
+                                                            alt="Classic Lemonade" width="275" height="275">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                            <div class="meal-card__content">
+                                                <div class="content-inner">
+                                                    <div class="calories">70 calories</div>
+                                                    <div class="name">Classic Lemonade</div>
+                                                </div>
+                                                <div class="actions"><button title="Customize your Classic Lemonade"
+                                                        type="button" class="button button--link">View
+                                                        Details</button><button
+                                                        title="Add Classic Lemonade to your cart" type="button"
+                                                        class="button button--link">Start Your Order</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="meal-card"><a title="Customize your Poke-avo Toast"
+                                                class="meal-image-link" href="/item/poke-avo-toast">
+                                                <div class="meal-card__image">
+                                                    <picture>
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x"
+                                                            type="image/webp" media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x"
+                                                            media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x"
+                                                            type="image/webp"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x">
+                                                        <img class="img-responsive lazyloaded"
+                                                            src="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?q=80"
+                                                            data-src="//images.ctfassets.net/gurfnqpkp29y/1PoufyJWdHvLtAPiJcxVNy/00780dd676e387db1e81c2e09b071a1c/2022-LMN-OLO-PokecadoToast_500x500.jpg?q=80"
+                                                            alt="Poke-avo Toast" width="275" height="275">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                            <div class="meal-card__content">
+                                                <div class="content-inner">
+                                                    <div class="calories">490 calories</div>
+                                                    <div class="name">Poke-avo Toast</div>
+                                                </div>
+                                                <div class="actions"><button title="Customize your Poke-avo Toast"
+                                                        type="button" class="button button--link">View
+                                                        Details</button><button title="Add Poke-avo Toast to your cart"
+                                                        type="button" class="button button--link">Start Your
+                                                        Order</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="meal-card"><a title="Customize your Comfort Bowl"
+                                                class="meal-image-link" href="/item/comfort-bowl">
+                                                <div class="meal-card__image">
+                                                    <picture>
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x"
+                                                            type="image/webp" media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x"
+                                                            media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x"
+                                                            type="image/webp"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x">
+                                                        <img class="img-responsive ls-is-cached lazyloaded"
+                                                            src="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?q=80"
+                                                            data-src="//images.ctfassets.net/gurfnqpkp29y/3ywkHRYYpFNZ8QSpw3xH3n/554ed84b7781bf845ef30ee40d588322/2022-LMN-ComfortBowl-Beef_500x500.jpg?q=80"
+                                                            alt="Comfort Bowl" width="275" height="275">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                            <div class="meal-card__content">
+                                                <div class="content-inner">
+                                                    <div class="calories">640 calories</div>
+                                                    <div class="name">Comfort Bowl</div>
+                                                </div>
+                                                <div class="actions"><button title="Customize your Comfort Bowl"
+                                                        type="button" class="button button--link">View
+                                                        Details</button><button title="Add Comfort Bowl to your cart"
+                                                        type="button" class="button button--link">Start Your
+                                                        Order</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="meal-card"><a title="Customize your Sustainable Salmon"
+                                                class="meal-image-link" href="/item/sustainable-salmon">
+                                                <div class="meal-card__image">
+                                                    <picture>
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x"
+                                                            type="image/webp" media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x"
+                                                            media="(min-width: 768px)"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=400&amp;q=80&amp;w=400 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=800&amp;q=80&amp;w=800 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x"
+                                                            type="image/webp"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240&amp;fm=webp 2x">
+                                                        <source
+                                                            data-srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x"
+                                                            srcset="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=120&amp;q=80&amp;w=120 1x, //images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?f=center&amp;fit=fill&amp;h=240&amp;q=80&amp;w=240 2x">
+                                                        <img class="img-responsive lazyloaded"
+                                                            src="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?q=80"
+                                                            data-src="//images.ctfassets.net/gurfnqpkp29y/79RjrIdIDR2ERnfkvIx5tM/192839d0c8254702f15667920e7964b5/2022-LMN-SustainableSalmon_500x500.jpg?q=80"
+                                                            alt="Sustainable Salmon" width="275" height="275">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                            <div class="meal-card__content">
+                                                <div class="content-inner">
+                                                    <div class="calories">730 calories</div>
+                                                    <div class="name">Sustainable Salmon</div>
+                                                </div>
+                                                <div class="actions"><button title="Customize your Sustainable Salmon"
+                                                        type="button" class="button button--link">View
+                                                        Details</button><button
+                                                        title="Add Sustainable Salmon to your cart" type="button"
+                                                        class="button button--link">Start Your Order</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242.96 8.68"
+                                    class="squiggle">
+                                    <path
+                                        d="M242.83,5.86c-3,.07-4.69-.87-7-2.17A24.87,24.87,0,0,0,223.38,0a21.1,21.1,0,0,0-12.64,3.21,16.18,16.18,0,0,1-8.62,2.63,17,17,0,0,1-6.07-.8,30,30,0,0,1-2.7-1.37,27.47,27.47,0,0,0-6-2.68A23.61,23.61,0,0,0,184.5.32l0,.06A29.55,29.55,0,0,0,180.94,0a21.11,21.11,0,0,0-12.65,3.21,16.15,16.15,0,0,1-8.61,2.63,17,17,0,0,1-6.08-.8,28.57,28.57,0,0,1-2.69-1.37,28,28,0,0,0-6-2.68,23.79,23.79,0,0,0-2.82-.69l0,.06A29.55,29.55,0,0,0,138.49,0a21.16,21.16,0,0,0-12.65,3.21,16.15,16.15,0,0,1-8.61,2.63,20,20,0,0,1-4.52-.37,18.14,18.14,0,0,1-3.92-1.8A24.73,24.73,0,0,0,99.62.33h0A32.4,32.4,0,0,0,96.37,0,21.1,21.1,0,0,0,83.73,3.23a16.15,16.15,0,0,1-8.61,2.63A17,17,0,0,1,69,5.06a28.68,28.68,0,0,1-2.7-1.37,27.84,27.84,0,0,0-6-2.68A23.79,23.79,0,0,0,57.49.32l0,.06A29.55,29.55,0,0,0,53.93,0,21.14,21.14,0,0,0,41.28,3.23a16.15,16.15,0,0,1-8.61,2.63A16,16,0,0,1,23,3.35a23.45,23.45,0,0,0-8-3A18.38,18.38,0,0,0,0,4.13L3.12,5.86a13.7,13.7,0,0,1,11-2.81,18.91,18.91,0,0,1,6.51,2.52,21,21,0,0,0,12.18,3.1A21.07,21.07,0,0,0,43.72,5.45c2.72-1.51,5.06-2.82,10-2.62a20.83,20.83,0,0,1,5.1.78,22.36,22.36,0,0,1,4.23,2,26.49,26.49,0,0,0,4.09,1.95,15.13,15.13,0,0,0,5.95,1.16h.44v0c.54,0,1.1,0,1.7,0a21,21,0,0,0,11-3.22c2.72-1.51,5.07-2.82,10-2.62a23.9,23.9,0,0,1,2.58.24,18.91,18.91,0,0,1,6.42,2.5,21.54,21.54,0,0,0,6.13,2.54,15.16,15.16,0,0,0,4.24.57H116c.45,0,.9,0,1.38,0a21,21,0,0,0,11-3.22c2.72-1.51,5.07-2.82,10-2.62a20.82,20.82,0,0,1,5.09.78,22.76,22.76,0,0,1,4.24,2,25.92,25.92,0,0,0,4.08,1.95,15.16,15.16,0,0,0,5.95,1.16h.44v0c.54,0,1.1,0,1.71,0a21.07,21.07,0,0,0,10.95-3.22,16.2,16.2,0,0,1,10-2.62,20.83,20.83,0,0,1,5.1.78,22.36,22.36,0,0,1,4.23,2,27.19,27.19,0,0,0,4.14,2,15.1,15.1,0,0,0,5.9,1.14h.43v0c.55,0,1.11,0,1.71,0a21,21,0,0,0,10.95-3.22c2.72-1.51,5.07-2.82,10-2.62a20,20,0,0,1,10.2,3.07c2.45,1.37,5,2.78,9.17,2.78H243Z"
+                                        fill="var(--squiggle-color)"></path>
+                                </svg>
+                            </div>
+                            <div class="view-menu"><a aria-label="View full menu" type="button"
+                                    class="button button--block button--large button--primary" href="/25734/menu">View
+                                    Full Menu</a></div>
+                        </div>
+                    </section>
+                    <section class="group-offers">
+                        <div class="container">
+                            <h2>Anytime, Anywhere</h2>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="marketing-card">
+                                        <div class="marketing-card__image">
+                                            <picture>
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=800&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1600&amp;fm=webp 2x"
+                                                    type="image/webp" media="(min-width: 768px)"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=800&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1600&amp;fm=webp 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=800 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1600 2x"
+                                                    media="(min-width: 768px)"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=800 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1600 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=600&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1200&amp;fm=webp 2x"
+                                                    type="image/webp"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=600&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1200&amp;fm=webp 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=600 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1200 2x"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=600 1x, //images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?f=center&amp;fit=fill&amp;q=80&amp;w=1200 2x">
+                                                <img class="img-responsive lazyloaded"
+                                                    data-src="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?q=80"
+                                                    alt="Catering spread showing lunchboxes, sandwiches, vegan lunchbox offering, chips, lemonades, and cookies."
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/1YgGxdPpxgAbzSp5UDUynE/3f30c02deb16c8d6744af4ccd2659264/Group_Ordering_20191030_le_0265.jpg?q=80">
+                                            </picture>
+                                        </div>
+                                        <div class="marketing-card__content">
+                                            <h4 class="title">Group Order</h4>
+                                            <p class="description">Easily coordinate your order with multiple people by
+                                                letting your friends choose their own dishes.</p><a
+                                                aria-label="Start a Group order" type="button"
+                                                class="button button--large button--primary" href="/group-orders">Group
+                                                Orders</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="marketing-card">
+                                        <div class="marketing-card__image">
+                                            <picture>
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=800&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1600&amp;fm=webp 2x"
+                                                    type="image/webp" media="(min-width: 768px)"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=800&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1600&amp;fm=webp 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=800 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1600 2x"
+                                                    media="(min-width: 768px)"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=800 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1600 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=600&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1200&amp;fm=webp 2x"
+                                                    type="image/webp"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=600&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1200&amp;fm=webp 2x">
+                                                <source
+                                                    data-srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=600 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1200 2x"
+                                                    srcset="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=600 1x, //images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?f=center&amp;fit=fill&amp;q=80&amp;w=1200 2x">
+                                                <img class="img-responsive lazyloaded"
+                                                    data-src="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?q=80"
+                                                    alt="Catering image showing lemonade, Mexican street corn &amp; California mixed greens salads, a box of 7 half sandwiches, a variety of desserts (macarons, lemon bar, cookies, brownies) and a vase of sunflowers."
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/3AOC4Z3Qui4ClFsQIL2iyF/c50c3b2ed253837cbbdc98a32e18cdcb/20191030_le_0139.png?q=80">
+                                            </picture>
+                                        </div>
+                                        <div class="marketing-card__content">
+                                            <h4 class="title">Catering</h4>
+                                            <p class="description">Take the hassle out of your big event. Let our expert
+                                                team do the cooking for you.</p><a
+                                                aria-label="Learn more about Lemonade catering" type="button"
+                                                class="button button--large button--primary"
+                                                href="/catering">Catering</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="our-mission">
+                        <div class="beach-asset beach-asset--left"><img class=" lazyloaded"
+                                data-src="/static/media/beach-left.6ddb857b6f19c93e8149.jpg" alt="Beach illustration"
+                                src="/static/media/beach-left.6ddb857b6f19c93e8149.jpg"></div>
+                        <div class="container">
+                            <div class="our-mission__header">
+                                <h2 class="eyebrow">Provenance</h2>
+                                <h3>California-Focused and Seasonally Driven</h3>
+                            </div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242.96 8.68" class="squiggle">
+                                <path
+                                    d="M242.83,5.86c-3,.07-4.69-.87-7-2.17A24.87,24.87,0,0,0,223.38,0a21.1,21.1,0,0,0-12.64,3.21,16.18,16.18,0,0,1-8.62,2.63,17,17,0,0,1-6.07-.8,30,30,0,0,1-2.7-1.37,27.47,27.47,0,0,0-6-2.68A23.61,23.61,0,0,0,184.5.32l0,.06A29.55,29.55,0,0,0,180.94,0a21.11,21.11,0,0,0-12.65,3.21,16.15,16.15,0,0,1-8.61,2.63,17,17,0,0,1-6.08-.8,28.57,28.57,0,0,1-2.69-1.37,28,28,0,0,0-6-2.68,23.79,23.79,0,0,0-2.82-.69l0,.06A29.55,29.55,0,0,0,138.49,0a21.16,21.16,0,0,0-12.65,3.21,16.15,16.15,0,0,1-8.61,2.63,20,20,0,0,1-4.52-.37,18.14,18.14,0,0,1-3.92-1.8A24.73,24.73,0,0,0,99.62.33h0A32.4,32.4,0,0,0,96.37,0,21.1,21.1,0,0,0,83.73,3.23a16.15,16.15,0,0,1-8.61,2.63A17,17,0,0,1,69,5.06a28.68,28.68,0,0,1-2.7-1.37,27.84,27.84,0,0,0-6-2.68A23.79,23.79,0,0,0,57.49.32l0,.06A29.55,29.55,0,0,0,53.93,0,21.14,21.14,0,0,0,41.28,3.23a16.15,16.15,0,0,1-8.61,2.63A16,16,0,0,1,23,3.35a23.45,23.45,0,0,0-8-3A18.38,18.38,0,0,0,0,4.13L3.12,5.86a13.7,13.7,0,0,1,11-2.81,18.91,18.91,0,0,1,6.51,2.52,21,21,0,0,0,12.18,3.1A21.07,21.07,0,0,0,43.72,5.45c2.72-1.51,5.06-2.82,10-2.62a20.83,20.83,0,0,1,5.1.78,22.36,22.36,0,0,1,4.23,2,26.49,26.49,0,0,0,4.09,1.95,15.13,15.13,0,0,0,5.95,1.16h.44v0c.54,0,1.1,0,1.7,0a21,21,0,0,0,11-3.22c2.72-1.51,5.07-2.82,10-2.62a23.9,23.9,0,0,1,2.58.24,18.91,18.91,0,0,1,6.42,2.5,21.54,21.54,0,0,0,6.13,2.54,15.16,15.16,0,0,0,4.24.57H116c.45,0,.9,0,1.38,0a21,21,0,0,0,11-3.22c2.72-1.51,5.07-2.82,10-2.62a20.82,20.82,0,0,1,5.09.78,22.76,22.76,0,0,1,4.24,2,25.92,25.92,0,0,0,4.08,1.95,15.16,15.16,0,0,0,5.95,1.16h.44v0c.54,0,1.1,0,1.71,0a21.07,21.07,0,0,0,10.95-3.22,16.2,16.2,0,0,1,10-2.62,20.83,20.83,0,0,1,5.1.78,22.36,22.36,0,0,1,4.23,2,27.19,27.19,0,0,0,4.14,2,15.1,15.1,0,0,0,5.9,1.14h.43v0c.55,0,1.11,0,1.71,0a21,21,0,0,0,10.95-3.22c2.72-1.51,5.07-2.82,10-2.62a20,20,0,0,1,10.2,3.07c2.45,1.37,5,2.78,9.17,2.78H243Z"
+                                    fill="var(--squiggle-color)"></path>
+                            </svg>
+                            <div class="our-mission__copy">
+                                <p>Eating your vegetables shouldn't feel like punishment. Lemonade has become the
+                                    people's choice for the freshness and originality of our food, showcasing vibrant
+                                    vegetables in a fun, creative way.</p>
+                                <p>While our seasonally changing menu is rich in color and diverse in options, the
+                                    environment is never overbearing. Food and community are always the co-stars.</p>
+                            </div>
+                        </div>
+                        <div class="beach-asset beach-asset--right"><img class=" lazyloaded"
+                                data-src="/static/media/beach-right.384139ce58266babfae3.jpg" alt="Beach illustration"
+                                src="/static/media/beach-right.384139ce58266babfae3.jpg"></div>
+                    </section>
+                    <section class="homepage-blog-posts">
+                        <div class="container">
+                            <h2>Announcements</h2>
+                            <div class="row homepage-blog-posts__grid">
+                                <div class="column">
+                                    <div class="homepage-blog-post">
+                                        <div class="homepage-blog-post__image"><a href="/blog/new-fall-menu">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x"
+                                                        type="image/webp"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x">
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x">
+                                                    <img class="img-responsive lazyloaded"
+                                                        data-src="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?q=80"
+                                                        alt="Seven different proteins "
+                                                        src="//images.ctfassets.net/gurfnqpkp29y/XsB7eAeq1pXWrrVYRyql1/6e61f0339587ec5d7e5bd89bc6a09493/2022-LMN-FALL-ProteinOptions_01__1_.jpg?q=80">
+                                                </picture>
+                                            </a></div>
+                                        <div class="homepage-blog-post__content">
+                                            <div class="homepage-blog-post__content__header"><time class="date"
+                                                    datetime="2022-10-12">Oct 12, 2022</time><a
+                                                    href="/blog/new-fall-menu">
+                                                    <h4 class="title">NEW Fall Menu! </h4>
+                                                </a></div><a aria-label="Read on about NEW Fall Menu! " type="button"
+                                                class="button button--small button--primary"
+                                                href="/blog/new-fall-menu">Read On</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="homepage-blog-post">
+                                        <div class="homepage-blog-post__image"><a
+                                                href="/blog/eat-drink-cater-earn-rewards">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x"
+                                                        type="image/webp"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x">
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x">
+                                                    <img class="img-responsive lazyloaded"
+                                                        data-src="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?q=80"
+                                                        alt="Marketplace sides on a table top. "
+                                                        src="//images.ctfassets.net/gurfnqpkp29y/Xaj7Ys5oBytP8T08Qe1uO/22f09ff7f90e09d3148d26ed9694d079/catering_2021_1.jpg?q=80">
+                                                </picture>
+                                            </a></div>
+                                        <div class="homepage-blog-post__content">
+                                            <div class="homepage-blog-post__content__header"><time class="date"
+                                                    datetime="2022-07-03">Jul 3, 2022</time><a
+                                                    href="/blog/eat-drink-cater-earn-rewards">
+                                                    <h4 class="title">Eat, Drink, Cater, Earn Rewards</h4>
+                                                </a></div><a aria-label="Read on about Eat, Drink, Cater, Earn Rewards"
+                                                type="button" class="button button--small button--primary"
+                                                href="/blog/eat-drink-cater-earn-rewards">Read On</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="homepage-blog-post">
+                                        <div class="homepage-blog-post__image"><a href="/blog/fundraise-with-us">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x"
+                                                        type="image/webp"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x">
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x">
+                                                    <img class="img-responsive lazyloaded"
+                                                        data-src="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?q=80"
+                                                        alt=""
+                                                        src="//images.ctfassets.net/gurfnqpkp29y/4W12TDzXJkwfb2ovnuCLiz/2e3a69089dc0a29ce399a6ebae66aa9b/2021-LMN-Catering_27.jpg?q=80">
+                                                </picture>
+                                            </a></div>
+                                        <div class="homepage-blog-post__content">
+                                            <div class="homepage-blog-post__content__header"><time class="date"
+                                                    datetime="2022-06-16">Jun 16, 2022</time><a
+                                                    href="/blog/fundraise-with-us">
+                                                    <h4 class="title">Fundraise With Us!</h4>
+                                                </a></div><a aria-label="Read on about Fundraise With Us!" type="button"
+                                                class="button button--small button--primary"
+                                                href="/blog/fundraise-with-us">Read On</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="homepage-blog-post">
+                                        <div class="homepage-blog-post__image"><a
+                                                href="/blog/introducing-bowl-tuesdays">
+                                                <picture>
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x"
+                                                        type="image/webp"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300&amp;fm=webp 1x, //images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600&amp;fm=webp 2x">
+                                                    <source
+                                                        data-srcset="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x"
+                                                        srcset="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=100&amp;q=80&amp;w=300 1x, //images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?f=center&amp;fit=fill&amp;h=200&amp;q=80&amp;w=600 2x">
+                                                    <img class="img-responsive lazyloaded"
+                                                        data-src="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?q=80"
+                                                        alt="image of three bowl entrees: chicken mango bowl, avocado tuna poke bowl, green Chile chicken bowl"
+                                                        src="//images.ctfassets.net/gurfnqpkp29y/32i62LgjVGgGU2bd4pF85v/ef7016f361dc553e4666fa894fa4a74c/Screen_Shot_2020-10-01_at_1.48.51_PM.png?q=80">
+                                                </picture>
+                                            </a></div>
+                                        <div class="homepage-blog-post__content">
+                                            <div class="homepage-blog-post__content__header"><time class="date"
+                                                    datetime="2020-09-30">Sep 30, 2020</time><a
+                                                    href="/blog/introducing-bowl-tuesdays">
+                                                    <h4 class="title"> Introducing Bowl Tuesdays </h4>
+                                                </a></div><a aria-label="Read on about  Introducing Bowl Tuesdays "
+                                                type="button" class="button button--small button--primary"
+                                                href="/blog/introducing-bowl-tuesdays">Read On</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+                <div id="nav-menu-root">
+                    <div class="inner-wrapper">
+                        <div role="dialog" aria-label="Navigation Menu" aria-hidden="true" class="menu"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-2 ">
-        <div class="owl-carousel header-carousel position-relative mb-2">
-            <div class="owl-carousel-item position-relative img-size">
-                <img class="img-fluid img-blocked " src="img/carousel-1.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-lg-12">
-                                <h1 class="display-5 text-white text-center animated slideInDown mb-4">Votre
-                                    partenaire en<span class="text-primary"> Developpement Informatique</span> </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2 text-center">pour la conception
-                                    de solutions mobiles et web ainsi que la prestation de conseils personnalisés.</p>
+        <div class="sticky-button-container hidden"><button type="button"
+                class="button cart__submit button--block button--large button--primary">Checkout (0 items)</button>
+        </div>
+        <div>
+            <div class="footer-banner">
+                <div class="container">
+                    <div class="footer-banner__content"><span>Freshly Squeezed</span>
+                        <h2>Sign up for our loyalty program </h2>
+                        <form class="form">
+                            <div class="form-group"><input name="email" placeholder="Email Address"
+                                    aria-label="Email Address" aria-invalid="false" type="text"
+                                    class="form-control footer-input" value=""><input placeholder="Zip Code"
+                                    aria-label="Zip Code" name="zipcode" aria-invalid="false" type="text"
+                                    class="form-control footer-input" value=""><button
+                                    aria-label="Submit newsletter signup" type="submit"
+                                    class="button button--large button--primary">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer"><img class="footer__logo container"
+                    src="/static/media/footer-knockout.206f7461b2d889f1eef9.png" alt="Lemonade logo">
+                <div class="footer__lower">
+                    <div class="footer__main">
+                        <div class="container">
+                            <div class="row">
+                                <div class="column">
+                                    <h3>Quick Links</h3>
+                                    <div class="link-flex">
+                                        <div>
+                                            <ul class="links">
+                                                <li><a aria-current="page" title="Back to the home page"
+                                                        href="/">Home</a></li>
+                                                <li><a title="See all Lemonade locations"
+                                                        href="/locations">Locations</a></li>
+                                                <li><a title="Sign up for rewards" href="/rewards">Rewards</a></li>
+                                                <li><a title="Catering" href="/catering">Catering</a></li>
+                                                <li><a title="Contact Us" href="/contact-us">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="links">
+                                                <li><a title="Join us for an exciting career" href="/careers">Jobs</a>
+                                                </li>
+                                                <li><a title="Purchase a gift card online"
+                                                        href="https://onelink.quickgifts.com/merchant/lemonade-restaurant">Gift
+                                                        Cards</a></li>
+                                                <li><a title="Food for thought (blog)" href="/blog">Blog</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="contact">
+                                        <h3>Contact</h3>
+                                        <address>1600 Champa Street <br>Suite 340 <br>Denver CO 80202</address>
+                                        <p>Catering: <a href="3104639998">(310) 463-9998</a></p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <h3>Socialize</h3>
+                                    <ul class="social-links">
+                                        <li class="social-links__item"><a
+                                                href="https://apps.apple.com/us/app/lemonade/id1320042132?ls=1"
+                                                target="_blank" rel="noopener noreferrer"
+                                                title="phone icon, link to Lemonade App on Apple App Store"><img
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/3fQidVTpLmQyoCXAFX5lQK/cc31c1086c877925e186e5625b298904/phone.94d40d0e.svg"
+                                                    alt="Rewards app for iOS"></a></li>
+                                        <li class="social-links__item"><a href="https://twitter.com/LemonadeLA"
+                                                target="_blank" rel="noopener noreferrer"><img
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/5Koarp87VPqov0lOd8jC8n/5d0e9521a545f93aa24e1d39cb2e3562/twitter.svg"
+                                                    alt="Lemonade LA on Twitter"></a></li>
+                                        <li class="social-links__item"><a href="https://www.instagram.com/lemonadela/"
+                                                target="_blank" rel="noopener noreferrer"><img
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/5jiUMbz8aJnRKDhuRxkQoI/0e284380ac8fb32baf8630ee41566bb6/instagram-2.svg"
+                                                    alt="Lemonade LA on Instagram"></a></li>
+                                        <li class="social-links__item"><a href="https://www.facebook.com/LemonadeLA/"
+                                                target="_blank" rel="noopener noreferrer"><img
+                                                    src="//images.ctfassets.net/gurfnqpkp29y/5dKxu2GXGU9aMUgAUtiSGZ/6b11872a96fc830ca21fd9cfe5e85350/facebook-2.svg"
+                                                    alt="Lemonade LA on Facebook"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-10 col-lg-12">
-                                <h1 class="display-5 text-white text-center animated slideInDown mb-4">votre
-                                    partenaire<span class="text-primary"> Developpement informatique</span> </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2 text-center">Pour la conception
-                                    d'applications mobiles , web et prestations de conseils</p>
-                            </div>
+                    <div class="footer__copyright">
+                        <div class="container">
+                            <div class="footer__copyright__inner">© Lemonade Restaurant Group, 2023. All Rights
+                                Reserved. <br><a title="Accessibility Statement"
+                                    href="/accessibility-statement">Accessibility Statement</a><a title="Privacy Policy"
+                                    href="/privacy-policy">Privacy Policy</a><a title="Terms of Use"
+                                    href="/terms-of-use">Terms of Use</a><a title="Do not sell my info"
+                                    href="/privacy-policy#h-sale-of-personal-information">Do Not Sell My Info</a><a
+                                    title="Transparency in Coverage Rule"
+                                    href="/transparency-in-coverage-rule">Transparency in Coverage Rule</a></div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </footer>
+        </div><button type="button" class="feedback-widget-button"><svg aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="circle-question" class="svg-inline--fa fa-circle-question " role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z">
+                </path>
+            </svg> Feedback</button>
+    </div>
+    <script src="https://static.olocdn.net/web-client/checkout-web-client/2.3.1/checkout.js"></script>
+    <div id="nav-cart-root">
+        <div class="inner-wrapper">
+            <div id="cart" role="dialog" aria-label="Shopping Cart" aria-hidden="true" class=""></div>
+        </div>
+    </div><iframe height="0" width="0" style="display: none; visibility: hidden;"
+        src="https://10315714.fls.doubleclick.net/activityi;src=10315714;type=lemon0;cat=lemon0;ord=6884006263847;gtm=45He34q0;auiddc=1250692922.1682182909;~oref=https%3A%2F%2Flemonadela.com%2F?"></iframe>
+    <div id="nav-locations-root">
+        <div class="inner-wrapper">
+            <div role="dialog" aria-label="Locations" aria-hidden="true" id="locations-menu" class=""></div>
         </div>
     </div>
-    <!-- Carousel End -->
-
-    <!-- a propos Start -->
-    <div class="container-fluid overflow-hidden py-2 px-lg-0">
-        <div class="container a propos py-5 px-lg-0">
-            <div class="row g-5 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/pourquoi.jpg"
-                            style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 a propos-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="mb-2">Pourquoi choisir CodeLab Solux</h1>
-                    <p class="mb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos.
-                    </p>
-                    <div class="row g-4 mb-5 mt-3">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-th fa-2x text-primary mb-3"></i>
-                            <h5>Expertise technique</h5>
-                            <p class="m-0">Une expertise technique de langages de programmation et de plates-formes de
-                                développement.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-clock fa-2x text-primary mb-3"></i>
-                            <h5>Gain de temps</h5>
-                            <p class="m-0">Gagner du temps en évitant d'avoir à consacrer du temps à des tâches
-                                complexes que vous n'êtes pas spécialisé à effectuer.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-money-bill-wave fa-2x text-primary mb-3"></i>
-                            <h5>Coûts réduits</h5>
-                            <p class="m-0">Des ressources et d'outils qui leur permettent de développer des logiciels
-                                plus rapidement.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-tasks fa-2x text-primary mb-3"></i>
-                            <h5>Flexibilité</h5>
-                            <p class="m-0">solutions sur mesure adaptées à vos besoins spécifiques et des options de
-                                tarification flexibles pour s'adapter à votre budget.
-                            </p>
-                        </div>
-                        <div class="col-sm-12 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-headset fa-2x text-primary mb-3"></i>
-                            <h5>Support continu</h5>
-                            <p class="m-0">Des solutions surmesure à la pointe de l'innovation en matière de technologie
-                                et de l’innovation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <script type="text/javascript"
+        id="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "613813862669690"); fbq("track", "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=613813862669690&amp;ev=PageView&amp;noscript=1"></noscript>
+    <script type="text/javascript"
+        id="">var adformUTM = "", query = window.location.search; if (query && "" !== query && "undefined" !== query && -1 !== query.indexOf("utm_")) { query = query.substr(1); for (var params = query.split("\x26"), utms = [], i = 0; i < params.length; i++)-1 !== params[i].indexOf("utm_") && utms.push(params[i].split("\x3d")); if (utms && 0 < utms.length) for (console.log(utms), i = 0; i < utms.length; i++)"utm_a" === utms[i][0] && (adformUTM = utms[i][1]) } window._adftrack = Array.isArray(window._adftrack) ? window._adftrack : window._adftrack ? [window._adftrack] : [];
+            window._adftrack.push({ pm: 2422460, order: { sv1: adformUTM } }); (function () { var a = document.createElement("script"); a.type = "text/javascript"; a.async = !0; a.src = "https://a2.adform.net/serving/scripts/trackpoint/async/"; var b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(a, b) })();</script>
+    <noscript>
+        <p style="margin:0;padding:0;border:0;">
+            <img src="https://a2.adform.net/Serving/TrackPoint/?pm=2422460" width="1" height="1" alt="">
+        </p>
+    </noscript>
+    <div style="display: none; visibility: hidden;">
+        <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <script
+            type="text/javascript">ttd_dom_ready(function () { if ("function" === typeof TTDUniversalPixelApi) { var a = new TTDUniversalPixelApi; a.init("5vr06ui", ["xs6s86d"], "https://insight.adsrvr.org/track/up") } });</script>
     </div>
-    <!-- a propos End -->
-
-    <!-- Service Start -->
-    <div class="container-xxl py-2">
-        <div class="container py-5">
-            <div class=" wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5">Nos Services</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="logiciels.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Développement de logiciels sur mesure</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <a href="web.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Développement de site et applications web</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <a href="mobiles.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Développement d'applications mobiles</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <a href="conseils.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Conseil en systèmes d'information</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <a href="maintenance.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-5.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Maintenance et assistance technique</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <a href="accompagnement.html">
-                        <div class="service-item p-4">
-                            <div class="overflow-hidden mb-4">
-                                <img class="img-fluid" src="img/service-6.jpg" alt="">
-                            </div>
-                            <h4 class="mb-3">Accompagnement des utilisateurs</h4>
-                            <p class="text-black">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Nos solutions Start -->
-    <div class="container-xxl py-2">
-        <div class="container py-5">
-            <div class=" wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5">Nos solutions</h1>
-            </div>
-            <div class="row g-4">
-
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="border-bottom p-2 mb-1">
-                            <h4 class=" mb-0">Solution 1</h4>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 1</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 2</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 4</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 5</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Faire une
-                                    commande</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="border-bottom p-2 mb-1">
-                            <h4 class=" mb-0">Solution 1</h4>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 1</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 2</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 4</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 5</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Faire une
-                                    commande</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="border-bottom p-2 mb-1">
-                            <h4 class=" mb-0">Solution 1</h4>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 1</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 2</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 3</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 4</p>
-                            <p><i class="fa fa-check text-success me-3"></i>Fonctionalités 5</p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Faire une
-                                    commande</span></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Nos solutions End -->
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-2 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="">
-                <h1 class="mb-0">Témoignages</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">client</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">client</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">client</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">client</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-    <!-- actualités Start -->
-    <div class="container-xxl py-2">
-        <div class="container py-5">
-            <div class=" wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5">Actualités</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/article-1.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Article 1</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Lire plus</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/article-2.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Article 2</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Lire plus</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/article-3.jpg" alt="">
-                        </div>
-                        <h4 class="mb-3">Article 3</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Lire plus</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- actualités End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-1 wow fadeIn" data-wow-delay="0.1s"
-        style="margin-top: 2rem;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <img src="img/CLS 2.png" alt="" style="height: 40px; width: auto;">
-                    <p class="mt-3">Votre partenaire de confiance pour la conception de vos solutions mobiles et web.</p>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Informations</h4>
-                    <a class="btn btn-link" href="apropos.html">Qui sommes nous </a>
-                    <a class="btn btn-link" href="ccm.html">Comment ça marche </a>
-                    <a class="btn btn-link" href="faq.html">FAQ</a>
-                    <a class="btn btn-link" href="contact.html">Contact</a>
-                    <a class="btn btn-link" href="rdv.html">Demander Un Rdv </a>
-                    <a class="btn btn-link" href="blog.html">Blog</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Mentions légales</h4>
-                    <a class="btn btn-link" href="politique-de-confidentialite.html">Politique de confidentialité</a>
-                    <a class="btn btn-link" href="politique-de-securite.html">Politique de sécurité</a>
-                    <a class="btn btn-link" href="politiques-de-cookies.html">politique de cookies</a>
-                    <a class="btn btn-link" href="termes-et-conditions.html">Termes et conditions</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-3">Réseaux sociaux</h4>
-                    <h6 class="text-light mb-3">Suivez nous :</h6>
-                    <div class="d-flex pt-2 mb-3">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+228 90 00 00 00</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@codelabsolux.com</p>
-
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-3 mb-md-0">
-                        &copy; <a class="border-bottom " href="index.html"> 2023 Codelabsolux </a>,Tous droits réservés.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script type="text/javascript"
+        id="">(function (a, b, d) { if (!a.snaptr) { var c = a.snaptr = function () { c.handleRequest ? c.handleRequest.apply(c, arguments) : c.queue.push(arguments) }; c.queue = []; a = "script"; r = b.createElement(a); r.async = !0; r.src = d; b = b.getElementsByTagName(a)[0]; b.parentNode.insertBefore(r, b) } })(window, document, "https://sc-static.net/scevent.min.js"); snaptr("init", "c381e01f-78d1-43d0-b93e-aab54d7273f9", { user_email: "" }); snaptr("track", "PAGE_VIEW");</script>
+    <script type="text/javascript"
+        id="">!function (d, g, e) {
+                d.TiktokAnalyticsObject = e; var a = d[e] = d[e] || []; a.methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" "); a.setAndDefer = function (b, c) { b[c] = function () { b.push([c].concat(Array.prototype.slice.call(arguments, 0))) } }; for (d = 0; d < a.methods.length; d++)a.setAndDefer(a, a.methods[d]); a.instance = function (b) { b = a._i[b] || []; for (var c = 0; c < a.methods.length; c++)a.setAndDefer(b, a.methods[c]); return b }; a.load = function (b, c) {
+                    var f = "https://analytics.tiktok.com/i18n/pixel/events.js";
+                    a._i = a._i || {}; a._i[b] = []; a._i[b]._u = f; a._t = a._t || {}; a._t[b] = +new Date; a._o = a._o || {}; a._o[b] = c || {}; c = document.createElement("script"); c.type = "text/javascript"; c.async = !0; c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e; b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b)
+                }; a.load("CA6MHV3C77U5H171KH20"); a.page()
+            }(window, document, "ttq");</script>
+    <iframe id="universal_pixel_xs6s86d" height="0" width="0" style="display:none;"
+        src="https://insight.adsrvr.org/track/up?adv=5vr06ui&amp;ref=https%3A%2F%2Flemonadela.com%2F&amp;upid=xs6s86d&amp;upv=1.1.0"
+        title="TTD Universal Pixel"></iframe>
 </body>
 
 </html>

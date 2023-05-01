@@ -3670,7 +3670,7 @@
      * ```
      * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
      * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-     * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
+     * > You can Voir plus on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
      *
      * @memberof modifiers
      * @inner

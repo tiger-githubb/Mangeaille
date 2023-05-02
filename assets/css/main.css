@@ -2280,7 +2280,8 @@ ul.social-link-team li a {
 
 .contact-form-wrap {
   background-color: #FBFBFB;
-  padding: 45px 30px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   border-radius: 5px;
 }
 
@@ -2297,15 +2298,26 @@ ul.social-link-team li a {
 }
 
 .contact-form-box h4 i {
-  position: absolute;
-  left: -13%;
   color: #F28123;
+  margin-right: 20px;
   top: 2px;
 }
 
 .contact-form-box p {
   line-height: 1.8;
   opacity: 0.8;
+}
+
+.position{
+  display: grid;
+    align-items: center;
+}
+
+.btn-long{
+  padding-left: 270px !important;
+  padding-right: 270px !important;
+  color: white !important;
+
 }
 
 .contact-form-wrap .contact-form-box:last-child {

@@ -148,7 +148,7 @@
             meanScreenWidth: "992"
         });
         
-         // search form
+         // Recherche pourm
         $(".search-bar-icon").on("click", function(){
             $(".search-area").addClass("search-active");
         });

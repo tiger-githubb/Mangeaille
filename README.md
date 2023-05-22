@@ -1,3 +1,3 @@
 # Mangeaille
 
-wrbsite for an restaurant by Tiger coder
+website for an restaurant by Tiger coder

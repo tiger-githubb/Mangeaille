@@ -1,19 +1,7 @@
-/*
-Template Name: Mangeaille - Responsive Bootstrap4 Shop Template
-Template URI: 
-Description: Bootstrap template for fruits or any other kind of shop
-Author: Imran Hossain
-Author URI: https://imransdesign.com/
-Version: 1.0
-*/
-/* -----------------------------------------------------------------------------
 
-# Base - Genral & Typography
-
------------------------------------------------------------------------------ */
 html {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px;
   height: 100%;
 }
@@ -2158,6 +2146,15 @@ a.video-play-btn {
   margin: 150px 0;
 }
 
+.about-img {
+  height: 100%;
+  content: "";
+  border-top-left-radius: 5px;
+  -webkit-box-shadow: 0 0 20px #cacaca;
+  box-shadow: 0 0 20px #cacaca;
+  border-bottom-left-radius: 5px;
+}
+
 .feature-bg:after {
   background-image: url(../img/feature-bg.jpg);
   position: absolute;
@@ -2266,15 +2263,15 @@ ul.social-link-team li a {
   width: 49%;
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 15px;
 }
 
 .contact-form form p textarea {
   border: 1px solid #ddd;
   padding: 15px;
   height: 200px;
-  border-radius: 3px;
-  width: 100%;
+  border-radius: 15px;
+  width: 98%;
   resize: none;
 }
 
@@ -2818,4 +2815,252 @@ table.order-details tbody td {
   color: rgb(255, 255, 255) !important;
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .service-box .icon {
+  font-size: 36px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.services .service-box h3 {
+  color: #444444;
+  font-weight: 700;
+}
+
+.services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.services .service-box .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+
+.services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.services .service-box.blue .read-more {
+  color: #2db6fa;
+}
+
+.services .service-box.blue:hover {
+  background: #2db6fa;
+}
+
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+  border-top: 3px solid #f68c09;
+}
+
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+
+.services .service-box.orange:hover {
+  background: #f68c09;
+}
+
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+
+.services .service-box.green:hover {
+  background: #08da4e;
+}
+
+.services .service-box.red {
+  border-bottom: 3px solid #e9222c;
+}
+
+.services .service-box.red .icon {
+  color: #e9222c;
+  background: #fef7f8;
+}
+
+.services .service-box.red .read-more {
+  color: #e9222c;
+}
+
+.services .service-box.red:hover {
+  background: #e9222c;
+}
+
+.services .service-box.purple {
+  border-bottom: 3px solid #b50edf;
+}
+
+.services .service-box.purple .icon {
+  color: #b50edf;
+  background: #f8e4fd;
+}
+
+.services .service-box.purple .read-more {
+  color: #b50edf;
+}
+
+.services .service-box.purple:hover {
+  background: #b50edf;
+}
+
+.services .service-box.pink {
+  border-bottom: 3px solid #f51f9c;
+}
+
+.services .service-box.pink .icon {
+  color: #f51f9c;
+  background: #feecf7;
+}
+
+.services .service-box.pink .read-more {
+  color: #f51f9c;
+}
+
+.services .service-box.pink:hover {
+  background: #f51f9c;
+}
+
+.services .service-box:hover h3,
+.services .service-box:hover p,
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+
+.services .service-box:hover .icon {
+  background: #fff;
+}
+
+.feat::after{
+  background-image: url(../img/feature-bg.jpg);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  -webkit-box-shadow: 0 0 20px #cacaca;
+  box-shadow: 0 0 20px #cacaca;
+  border-bottom-left-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #f28123 !important;
+  font-size: 20px;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button{
+font-size: 18px;
+}
+.text-white{
+  color: white;
+}
+
+.video-bg{
+  background-color: #f28123;
+  padding-top: 50px;
+  display: flex;
+    justify-content: center;
+    height: 200px !important;
+}
+
+.video-section{
+  height: 500px;
+  
+}
+
+.bg-prqw::before{
+  position: absolute;
+  left: -97%;
+  top: -10%;
+  height: 120%;
+  width: 140%;
+  content: "";
+  background: #ffc1ab;
+  z-index: -1;
+  border-radius: 0 323.36px 356.64px 0;
+}
+
+.bg-prqw-right::before{
+  position: absolute;
+  left: 825px;
+  top: -10%;
+  height: 120%;
+  width: 140%;
+  content: "";
+  background: #ffc1ab;
+  z-index: -1;
+  border-radius: 323.36px 356.64px ;
+}
+
+.bg-prqw{
+  position: relative;
+}
+
+.img-prqw{
+  border-radius: 380px;
+}
+
+.text-section{
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prqw-text{
+  font-size: 20px; 
+}
+
+.invert{
+  display: flex;
+  flex-direction: row-reverse;
 }
